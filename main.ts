@@ -1,4 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    pins.analogSetPitchPin(AnalogPin.P0)
-    pins.analogPitch(700, 1000)
+    basic.showString("Naureen !!")
+    while (true) {
+        pins.analogSetPitchPin(AnalogPin.P0)
+        music.playMelody("E B C5 A B G A F ", 263)
+    }
+})
+input.onButtonPressed(Button.B, function () {
+    while (true) {
+        basic.showString("Nouman !!")
+        pins.analogSetPitchPin(AnalogPin.P0)
+        music.playMelody("A A A A A A A A ", 185)
+    }
 })
